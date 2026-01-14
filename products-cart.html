@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/crop-logo-image.png" type="image/x-icon">
+    <title>My Cart | Ecommerce</title>
+</head>
+
+<body>
+    <!-- HEADER BEGINS-->
+    <header>
+        <nav class="border-b border-gray-300 ">
+            <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+                <!-- LOGO BEGINS-->
+                <div>
+                    <a href="home.html"><img src="images/logo-image.png" alt="Brand Logo" class="h-14 w-auto"></a>
+                </div>
+                <!-- LOGO ENDS-->
+
+                <!-- SEARCH BAR BEGINS-->
+                <div
+                    class="flex items-center border-2 border-[#2b80fd] rounded-md overflow-hidden shadow-[0_0px_4px_#2b80fd] focus-within:shadow-[0_0_4px_#1C4D8D]">
+                    <input type="text" placeholder="Search"
+                        class="w-80 px-3 py-1.5 text-sm leading-none focus:outline-none">
+                    <button class="flex items-center gap-1 px-3 py-1.5 border-l-2 border-[#2b80fd] text-md"> All
+                        Category
+                        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                    </button>
+
+                    <button type="button"
+                        class="bg-[#2b80fd] px-7 py-1.5 overflow-hidden text-md text-white">Search</button>
+                </div>
+                <!-- SEARCH BARS ENDS-->
+                <!-- HEADER ICONS BEGINS-->
+                <div class="flex items-center gap-6">
+                    <!-- PROFILE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 transition duration-200 ease-in-out">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-user absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-user absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">
+                            Profile
+                        </span>
+
+                    </a>
+                    <!-- MESSAGE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-message absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-regular fa-message absolute opacity-0 transition-opacity duration-200
+                group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">Message</span>
+                    </a>
+                    <!-- ORDER ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-heart absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-heart absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd] "></i>
+                        </span>
+                        <span class="text-xs">Orders</span>
+                    </a>
+                    <!-- CART ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-cart-shopping absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-solid fa-cart-plus absolute opacity-0 transition-opacity duration-200
+            group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs">My cart</span>
+                    </a>
+                </div>
+                <!-- HEADER ICONS ENDS-->
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS-->
+    <!--*** MY CART SECTION BEGINS ***-->
+    <section class="max-w-7xl mx-auto px-4 py-8">
+
+        <h1 class="text-[27px] font-semibold mb-6">My cart (3)</h1>
+
+        <!-- MAIN GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- LEFT COLUMN -->
+            <div class="lg:col-span-2 space-y-4">
+
+                <!-- CART ITEM 1 -->
+                <div
+                    class="flex gap-4 border border-gray-300 rounded-lg p-4 bg-white hover:shadow-md transition hover:border-blue-300">
+                    <img src="images/goprocamer.jpg" class="w-24 h-24 object-contain">
+
+                    <div class="flex-1">
+                        <h2 class="font-semibold text-gray-800">
+                            GoPro HERO 6 4K Action Camera – Black
+                        </h2>
+                        <p class="text-sm text-gray-500">Color: Black</p>
+                        <p class="text-xs text-gray-400">Seller: Art Market</p>
+
+                        <div class="flex gap-4 mt-2">
+                            <button class="text-red-600 text-sm">Remove</button>
+                            <button class="text-yellow-600 text-sm">Save for later</button>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="font-semibold">$99.50</p>
+                        <select class="border rounded px-2 py-1 text-sm mt-2">
+                            <option>Qty: 1</option>
+                            <option>Qty: 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- CART ITEM 2 -->
+                <div
+                    class="flex gap-4 border border-gray-300 rounded-lg p-4 bg-white hover:shadow-md hover:border-blue-300 transition">
+                    <img src="images/gaming-mouse.jpg" class="w-24 h-24 object-contain">
+
+                    <div class="flex-1">
+                        <h2 class="font-semibold text-gray-800">
+                            RGB Gaming Mouse – 7200 DPI
+                        </h2>
+                        <p class="text-sm text-gray-500">Color: Black</p>
+                        <p class="text-xs text-gray-400">Seller: Tech Store</p>
+
+                        <div class="flex gap-4 mt-2">
+                            <button class="text-red-600 text-sm">Remove</button>
+                            <button class="text-yellow-600 text-sm">Save for later</button>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="font-semibold">$39.50</p>
+                        <select class="border rounded px-2 py-1 text-sm mt-2">
+                            <option>Qty: 1</option>
+                            <option>Qty: 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- CART ITEM 3 -->
+                <div
+                    class="flex gap-4 border border-gray-300 rounded-lg p-4 bg-white hover:shadow-md hover:border-blue-300 transition">
+                    <img src="images/lamp.png" class="w-24 h-24 object-contain">
+
+                    <div class="flex-1">
+                        <h2 class="font-semibold text-gray-800">
+                            Modern Table Lamp
+                        </h2>
+                        <p class="text-sm text-gray-500">Material: Plastic</p>
+                        <p class="text-xs text-gray-400">Seller: Home Store</p>
+
+                        <div class="flex gap-4 mt-2">
+                            <button class="text-red-600 text-sm">Remove</button>
+                            <button class="text-yellow-600 text-sm">Save for later</button>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="font-semibold">$78.99</p>
+                        <select class="border rounded px-2 py-1 text-sm mt-2">
+                            <option>Qty: 1</option>
+                            <option>Qty: 2</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <!-- RIGHT CONTAINER Begins -->
+            <div class="space-y-4">
+                <!-- COUPON BOX -->
+                <div class="border border-gray-300 rounded-lg px-3 py-4 mb-4 hover:shadow-md transition">
+                    <p class="text-sm font-medium text-gray-700 mb-2">
+                        Have a coupon?
+                    </p>
+
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Add coupon"
+                            class="flex-1 border rounded px-2 py-1 text-sm focus:outline-green-600 focus:ring-1 focus:ring-red-500">
+                        <button class="bg-green-600 text-white px-4 rounded  text-sm hover:bg-green-700">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+                <!-- ORDER SUMMARY BOX -->
+                <div class="border border-gray-300 rounded-lg p-4 bg-white h-fit hover:shadow-md transition">
+                    <h3 class="font-semibold mb-3">Order Summary</h3>
+
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Subtotal:</span>
+                            <span>$214.49</span>
+                        </div>
+                        <div class="flex justify-between text-green-600">
+                            <span>Discount:</span>
+                            <span>- $60.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Tax:</span>
+                            <span>$14.00</span>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="flex justify-between font-semibold text-lg">
+                        <span>Total:</span>
+                        <span>$168.49</span>
+                    </div>
+
+                    <button class="w-full mt-4 bg-green-600 text-white py-2 rounded hover:bg-green-700">
+                        Checkout
+                    </button>
+
+                    <div class="flex justify-center gap-2 mt-3">
+                        <img src="images/mastercard-payment.png" class="h-8 border px-3 rounded">
+                        <img src="images/paypal-payment.png" class="h-8 border px-3 rounded">
+                        <img src="images/visa-payment.png" class="h-8 border px-3 rounded">
+                        <img src="images/applepay-payment.png" class="h-8 border px-3 rounded">
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT CONTAINER Ends -->
+        </div>
+    </section>
+    <!--*** MY CART SECTION ENDS ***-->
+    <!--*** SECURE PAYMENT BEGINS ***-->
+    <Section class="px-14">
+        <!-- INFO STRIP -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+
+            <div class="flex items-center gap-3 p-4 border rounded-lg bg-white hover:shadow transition">
+                <div
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:shadow-lg">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-sm">Secure Payment</h2>
+                    <p class="text-xs text-gray-500">Your data is protected</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-4 border rounded-lg bg-white hover:shadow transition">
+                <div
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-600 hover:shadow-lg">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-sm">Customer Support</h2>
+                    <p class="text-xs text-gray-500">24/7 friendly support</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-4 border rounded-lg bg-white hover:shadow transition">
+                <div
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 hover:shadow-lg">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-sm">Free Delivery</h2>
+                    <p class="text-xs text-gray-500">On orders over $100</p>
+                </div>
+            </div>
+
+        </div>
+    </Section>
+    <!--*** SECURE PAYMENT ENDS ***-->
+    <!-- SAVED FOR LATER SECTION BEGINS -->
+    <section class="mt-10 px-14">
+        <h2 class="font-semibold text-[30px] mb-4">Saved for later</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+            <!-- CARD 1 -->
+            <div
+                class="border border-gray-300 rounded-lg p-3 bg-white hover:shadow-md transition hover:-translate-y-1 ">
+                <!-- IMAGE + OVERLAY -->
+                <div class="relative group">
+                    <img src="images/gaming-keyboard.jpg" class="w-full h-44 object-contain mb-3">
+
+                    <!-- OVERLAY -->
+                    <a href="products-detail.html"
+                        class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                            View Details
+                        </span>
+                    </a>
+                </div>
+
+                <span class="font-semibold text-sm text-green-600">$49.00</span>
+                <h3 class="text-md font-bold text-gray-700 mt-2 leading-snug">
+                    Mechanical Gaming Keyboard
+                </h3>
+
+                <a href="products-cart.html" class="flex items-center gap-1 text-blue-600 text-sm mt-2 font-medium hover:text-red-500">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Move to cart
+                </a>
+            </div>
+            <!-- CARD 2 -->
+            <div class="border border-gray-300 rounded-lg p-3 bg-white hover:shadow hover:-translate-y-1 transition">
+                <!-- IMAGE + OVERLAY -->
+                <div class="relative group">
+                    <img src="images/wireless-headphones.jpg" class="w-full h-44 object-contain mb-3">
+
+                    <!-- OVERLAY -->
+                    <a href="products-detail.html"
+                        class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                            View Details
+                        </span>
+                    </a>
+                </div>
+                <span class="font-semibold text-sm text-green-600">$59.99</span>
+                <h3 class="text-md font-bold text-gray-700 mt-2 leading-snug">
+                    Wireless Bluetooth Headphones
+                </h3>
+                <a href="products-cart.html" class="flex items-center gap-1 text-blue-600 text-sm mt-2 font-medium hover:text-red-500">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Move to cart
+                </a>
+            </div>
+            <!-- CARD 3 -->
+            <div class="border border-gray-300 rounded-lg p-3 bg-white hover:shadow hover:-translate-y-1 transition">
+                <!-- IMAGE + OVERLAY -->
+                <div class="relative group">
+                    <img src="images/Apple-watch.jpg" class="w-full h-44 object-contain mb-3">
+
+                    <!-- OVERLAY -->
+                    <a href="products-detail.html"
+                        class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                            View Details
+                        </span>
+                    </a>
+                </div>
+                <span class="font-semibold text-sm text-green-600">$429.00</span>
+                <h3 class="text-md font-bold text-gray-700 mt-2 leading-snug">
+                    Apple Watch Series Aluminum Case
+                </h3>
+                <a href="products-cart.html" class="flex items-center gap-1 text-blue-600 text-sm mt-2 font-medium hover:text-red-500">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Move to cart
+                </a>
+            </div>
+            <!-- CARD 4 -->
+            <div class="border border-gray-300 rounded-lg p-3 bg-white hover:shadow hover:-translate-y-1 transition">
+                <!-- IMAGE + OVERLAY -->
+                <div class="relative group">
+                    <img src="images/kettle.jpg" class="w-full h-44 object-contain mb-3">
+
+                    <!-- OVERLAY -->
+                    <a href="products-detail.html"
+                        class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                            View Details
+                        </span>
+                    </a>
+                </div>
+                <span class="font-semibold text-sm text-green-600">$89.00</span>
+                <h3 class="text-lg font-bold mt-2 text-gray-700 leading-snug">
+                    Kettle
+                </h3>
+                <a href="products-cart.html"
+                    class="flex items-center gap-1 text-blue-600 text-sm mt-2 font-medium hover:text-red-500">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Move to cart
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- SAVED FOR LATER SECTION ENDS -->
+    <!-- DISCOUNT BANNER BEGINS-->
+    <section class="flex justify-center m-10">
+        <div
+            class="bg-blue-600 text-white rounded-lg p-6 flex items-center justify-center justify-between max-w-6xl w-full">
+            <div>
+                <h2 class="text-lg font-bold">
+                    Super discount on more than 100 USD
+                </h2>
+                <p class="text-sm opacity-90">
+                    Have you ever finally just write dummy info
+                </p>
+            </div>
+
+            <a href="#"
+                class="bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-500 transition hover:border hover:border-orange-200">
+                Shop now
+            </a>
+        </div>
+    </section>
+    <!-- DISCOUNT BANNER ENDS-->
+    <!-- FOOTER BEGINS-->
+    <footer class="bg-white border-t border-gray-200 ">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-7 gap-8 text-sm text-gray-600">
+
+                <!-- BRAND -->
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <a href="home.html"><img src="images/logo-image.png" alt="Brand" class="h-8"></a>
+                    </div>
+                    <p class="text-gray-500 max-w-xs">
+                        Discover top products, competitive prices, and a seamless online shopping experience.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="flex gap-3 pt-2">
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-gradient-to-tr from-pink-500 via-purple-500 via-orange-400 to-yellow-400 hover:text-white transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-red-600 hover:border-red-600 hover:text-white transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ABOUT -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- PARTNERSHIP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Partnership</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- INFORMATION -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Money Refund</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Shipping</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- FOR USERS -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">For users</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Login</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Settings</a></li>
+                        <li><a href="#" class="hover:text-blue-600">My Orders</a></li>
+                    </ul>
+                </div>
+
+                <!-- GET APP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Get app</h4>
+                    <div class="space-y-2">
+                        <a href="#"><img src="images/app-store.png" alt="App Store" class="h-10"></a>
+                        <a href="#"><img src="images/google-play.png" alt="Google Play" class="h-10 mt-2"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COPYRIGHT BAR -->
+        <div class="border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-sm text-gray-500">
+                <p>© 2023 Ecommerce</p>
+
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <span>English</span>
+                    <img src="images/us-flag.png" class="w-5 h-4" alt="">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/crop-logo-image.png" type="image/x-icon">
+    <title>Product Details | Ecommerce</title>
+</head>
+
+<body>
+    <!-- HEADER BEGINS-->
+    <header>
+        <nav class="border-b border-gray-300 ">
+            <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+                <!-- LOGO BEGINS-->
+                <div>
+                    <a href="home.html"><img src="images/logo-image.png" alt="Brand Logo"
+                            class="h-14 w-auto text-blue-600"></a>
+                </div>
+                <!-- LOGO ENDS-->
+
+                <!-- SEARCH BAR BEGINS-->
+                <div
+                    class="flex items-center border-2 border-[#2b80fd] rounded-md overflow-hidden shadow-[0_0px_4px_#2b80fd] focus-within:shadow-[0_0_4px_#1C4D8D]">
+                    <input type="text" placeholder="Search"
+                        class="w-80 px-3 py-1.5 text-sm leading-none focus:outline-none">
+                    <button class="flex items-center gap-1 px-3 py-1.5 border-l-2 border-[#2b80fd] text-md"> All
+                        Category
+                        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                    </button>
+
+                    <button type="button"
+                        class="bg-[#2b80fd] px-7 py-1.5 overflow-hidden text-md text-white">Search</button>
+                </div>
+                <!-- SEARCH BARS ENDS-->
+                <!-- HEADER ICONS BEGINS-->
+                <div class="flex items-center gap-6">
+                    <!-- PROFILE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 transition duration-200 ease-in-out">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-user absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-user absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">
+                            Profile
+                        </span>
+
+                    </a>
+                    <!-- MESSAGE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-message absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-regular fa-message absolute opacity-0 transition-opacity duration-200
+                group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">Message</span>
+                    </a>
+                    <!-- ORDER ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-heart absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-heart absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd] "></i>
+                        </span>
+                        <span class="text-xs">Orders</span>
+                    </a>
+                    <!-- CART ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-cart-shopping absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-solid fa-cart-plus absolute opacity-0 transition-opacity duration-200
+            group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs">My cart</span>
+                    </a>
+                </div>
+                <!-- HEADER ICONS ENDS-->
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS-->
+    <!-- CATEGORY NAVIGATION BEGINS-->
+    <section class="border-b text-sm py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
+            <!-- LEFT -->
+            <div class="flex gap-4 text-gray-600">
+                <button class="flex items-center gap-2">
+                    <i class="fa-solid fa-bars text-[18px]"></i>
+                    <a href="home.html">All category</a>
+                </button>
+                <a href="products-Listview.html">Hot offers</a>
+                <a href="products-gridview.html">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <button class="flex items-center gap-1">
+                    Help
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex gap-9 text-gray-600">
+                <button class="flex items-center gap-1">English, USD <i
+                        class="fa-solid fa-chevron-down text-xs text-gray-500"></i></button>
+                <button class="flex items-center gap-2">
+                    Ship to
+                    <img src="images/germany-flag.png" class="w-4 h-3 object-cover">
+                    <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORY NAVIGATION ENDS-->
+    <!-- BREADCRUMB NAVIGATION BEGINS-->
+    <nav class="text-sm text-gray-500 pl-24 p-7 bg-gray-50">
+        <ol class="flex items-center gap-2">
+            <li><a href="home.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="products-gridview.html" class="hover:text-blue-600">Electronics</a></li>
+            <li><a href="products-Listview.html" class="text-gray-700 font-medium">Mobile Accessories</a></li>
+        </ol>
+    </nav>
+    <!-- BREADCRUMB NAVIGATION ENDS-->
+    <!-- PRODUCT DETAIL SECTION BEGINS -->
+    <section class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- LEFT: IMAGE Gallery-->
+        <div class="flex flex-col">
+            <div class="border border-gray-300 rounded-md p-4 hover:shadow-lg transition">
+                <img src="images/gopro-camera.jpg"
+                    class="w-full h-96 object-contain hover:scale-105 transition duration-300">
+            </div>
+
+            <!-- THUMBNAILS -->
+            <div class="flex gap-3 justify-center mt-8">
+                <img src="images/gopro-camera-parts.jpg" onclick="changeImage(this)"
+                    class="w-28 h-28 object-contain border rounded cursor-pointer hover:border-blue-500">
+
+                <img src="images/gopro-camera-part3.jpg" onclick="changeImage(this)"
+                    class="w-28 h-28 object-contain border rounded cursor-pointer hover:border-blue-500">
+
+                <img src="images/gopro-camera-screen.jpg" onclick="changeImage(this)"
+                    class="w-28 h-28 object-contain border rounded cursor-pointer hover:border-blue-500">
+
+                <img src="images/gopro-camera-accessories.jpg" onclick="changeImage(this)"
+                    class="w-28 h-28 object-contain border rounded cursor-pointer hover:border-blue-500">
+            </div>
+        </div>
+        <!-- RIGHT: DETAILS -->
+        <div>
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">
+                GoPro HERO 6 4K Action Camera – Black
+            </h1>
+
+            <!-- RATING -->
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <span class="text-yellow-400">★★★★☆</span>
+                <span>(75 Reviews)</span>
+            </div>
+
+            <!-- PRICE -->
+            <p class="text-3xl font-semibold text-black mb-4">$99.50</p>
+
+            <!-- DESCRIPTION -->
+            <p class="text-sm text-gray-600 leading-relaxed mb-6">
+                High-quality 4K video recording with advanced stabilization,
+                waterproof design, and durable build for adventure lovers.
+            </p>
+
+            <!-- FEATURES -->
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                <li>✔ 4K Ultra HD Video</li>
+                <li>✔ Waterproof up to 10m</li>
+                <li>✔ Image Stabilization</li>
+                <li>✔ Compact & Lightweight</li>
+            </ul>
+
+            <!-- ACTION BUTTONS -->
+            <div class="flex gap-4">
+                <a href="products-cart.html"
+                    class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+                    Add to Cart
+                </a>
+
+                <button class="border border-gray-300 px-6 py-2 rounded hover:bg-gray-100 transition">
+                    Add to Wishlist
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCT DETAIL SECTION ENDS -->
+    <!-- DESCRIPTION + TABS SECTION BEGINS -->
+    <!-- PRODUCT DETAILS TABS -->
+    <div class="max-w-6xl mx-auto px-6 mt-14 bg-white border rounded-md">
+
+        <!-- TAB HEADERS -->
+        <div class="flex gap-10 border-b text-sm font-semibold">
+            <button onclick="openTab(event,'desc')" class="tab-btn py-4 text-blue-600 border-b-2 border-blue-600">
+                Description
+            </button>
+
+            <button onclick="openTab(event,'reviews')" class="tab-btn py-4 text-gray-500 hover:text-blue-600">
+                Reviews
+            </button>
+
+            <button onclick="openTab(event,'shipping')" class="tab-btn py-4 text-gray-500 hover:text-blue-600">
+                Shipping
+            </button>
+
+            <button onclick="openTab(event,'seller')" class="tab-btn py-4 text-gray-500 hover:text-blue-600">
+                About Seller
+            </button>
+        </div>
+
+
+        <!-- TAB CONTENT -->
+        <div class=" text-sm text-gray-700 space-y-6">
+
+            <!-- DESCRIPTION -->
+            <div id="desc" class="tab-content space-y-4 py-8">
+                <p>
+                    The GoPro HERO 6 Black is a powerful action camera designed for adventure enthusiasts.
+                    It delivers stunning 4K video quality at 60fps and features advanced image stabilization
+                    for smooth, professional-looking footage.
+                </p>
+
+                <p>
+                    Built with durability in mind, this camera is waterproof without housing and performs
+                    exceptionally well in extreme environments. Whether you're capturing sports, travel,
+                    or daily moments, the HERO 6 ensures reliable performance.
+                </p>
+
+                <ul class="list-disc pl-6 space-y-1">
+                    <li>4K60 and 1080p240 video recording</li>
+                    <li>12MP photos with HDR support</li>
+                    <li>Waterproof up to 10 meters</li>
+                    <li>Touch screen with intuitive controls</li>
+                    <li>Advanced video stabilization</li>
+                </ul>
+            </div>
+
+            <!-- REVIEWS -->
+            <div id="reviews" class="tab-content hidden space-y-5 pb-8">
+                <div>
+                    <strong class="text-base">4.3 out of 5</strong> based on 75 customer reviews
+                </div>
+
+                <div class="space-y-3">
+                    <p><strong>Ali R.</strong> ⭐⭐⭐⭐⭐<br>
+                        Excellent video quality and very easy to use.</p>
+
+                    <p><strong>Sara K.</strong> ⭐⭐⭐⭐☆<br>
+                        Great stabilization, battery could be better.</p>
+
+                    <p><strong>Usman A.</strong> ⭐⭐⭐⭐☆<br>
+                        Perfect for travel and outdoor recording.</p>
+                </div>
+            </div>
+
+            <!-- SHIPPING -->
+            <div id="shipping" class="tab-content hidden space-y-4 pb-8">
+                <p>
+                    We offer fast and reliable shipping for all orders.
+                </p>
+
+                <ul class="list-disc pl-6 space-y-1">
+                    <li>Free standard delivery (5–7 business days)</li>
+                    <li>Express delivery available (2–3 business days)</li>
+                    <li>Tracking number provided after dispatch</li>
+                    <li>Cash on Delivery available in selected areas</li>
+                </ul>
+            </div>
+
+            <!-- SELLER -->
+            <div id="seller" class="tab-content hidden space-y-4 pb-8">
+                <p>
+                    <strong>ActionCam Store</strong> is a verified seller specializing in professional
+                    cameras and accessories.
+                </p>
+
+                <ul class="list-disc pl-6 space-y-1">
+                    <li>98% positive customer feedback</li>
+                    <li>Over 5 years of ecommerce experience</li>
+                    <li>Fast response and reliable after-sales support</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- DESCRIPTION + TABS SECTION ENDS -->
+
+    <!-- RELATED PRODUCTS SECTION BEGINS -->
+
+    <div class="max-w-6xl mx-auto px-4 mt-6 mb-12 border rounded-md p-6">
+
+        <!-- HEADING -->
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-lg font-semibold text-gray-800">
+                Recommended Products
+            </h2>
+            <a href="#" class="text-sm text-blue-600 hover:underline">
+                View more
+            </a>
+        </div>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+            <!-- CARD -->
+            <div class="border p-3 rounded hover:shadow-md transition">
+                <img src="images/action-mini-camera.jpg" class="h-32 w-full object-contain mb-2">
+                <p class="text-md text-gray-700 font-medium">Action Camera Mini</p>
+                <p class="text-sm font-semibold">$79.00</p>
+            </div>
+
+            <div class="border p-3 rounded hover:shadow-md transition">
+                <img src="images/4k-sports-camera.jpg" class="h-32 w-full object-contain mb-2">
+                <p class="text-md text-gray-700 font-medium">4K Sports Camera</p>
+                <p class="text-sm font-semibold">$89.00</p>
+            </div>
+
+            <div class="border p-3 rounded hover:shadow-md transition">
+                <img src="images/helmet-camera.jpg" class="h-32 w-full object-contain mb-2">
+                <p class="text-md text-gray-700 font-medium">Helmet Cam</p>
+                <p class="text-sm font-semibold">$65.00</p>
+            </div>
+
+            <div class="border p-3 rounded hover:shadow-md transition">
+                <img src="images/water-proof-camera.jpg" class="h-32 w-full object-contain mb-2">
+                <p class="text-md text-gray-700 font-medium">Waterproof Cam</p>
+                <p class="text-sm font-semibold">$92.00</p>
+            </div>
+
+            <div class="border p-3 rounded hover:shadow-md transition">
+                <img src="images/adventure-camera.jpg" class="h-32 w-full object-contain mb-2 ml-10">
+                <p class="text-md text-gray-700 font-medium">Adventure Camera</p>
+                <p class="text-sm font-semibold">$85.00</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- RELATED PRODUCTS SECTION ENDS -->
+
+    <!-- DISCOUNT BANNER BEGINS-->
+    <section class="flex justify-center m-10">
+        <div
+            class="bg-blue-600 text-white rounded-lg p-6 flex items-center justify-center justify-between max-w-6xl w-full">
+            <div>
+                <h2 class="text-lg font-bold">
+                    Super discount on more than 100 USD
+                </h2>
+                <p class="text-sm opacity-90">
+                    Have you ever finally just write dummy info
+                </p>
+            </div>
+
+            <a href="#"
+                class="bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-500 transition hover:border hover:border-orange-200">
+                Shop now
+            </a>
+        </div>
+    </section>
+    <!-- DISCOUNT BANNER ENDS-->
+
+    <!-- FOOTER BEGINS-->
+    <footer class="bg-white border-t border-gray-200 ">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-7 gap-8 text-sm text-gray-600">
+
+                <!-- BRAND -->
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <a href="home.html"><img src="images/logo-image.png" alt="Brand" class="h-8"></a>
+                    </div>
+                    <p class="text-gray-500 max-w-xs">
+                        Discover top products, competitive prices, and a seamless online shopping experience.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="flex gap-3 pt-2">
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-gradient-to-tr from-pink-500 via-purple-500 via-orange-400 to-yellow-400 hover:text-white transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-red-600 hover:border-red-600 hover:text-white transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ABOUT -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- PARTNERSHIP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Partnership</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- INFORMATION -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Money Refund</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Shipping</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- FOR USERS -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">For users</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Login</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Settings</a></li>
+                        <li><a href="#" class="hover:text-blue-600">My Orders</a></li>
+                    </ul>
+                </div>
+
+                <!-- GET APP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Get app</h4>
+                    <div class="space-y-2">
+                        <a href="#"><img src="images/app-store.png" alt="App Store" class="h-10"></a>
+                        <a href="#"><img src="images/google-play.png" alt="Google Play" class="h-10 mt-2"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COPYRIGHT BAR -->
+        <div class="border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-sm text-gray-500">
+                <p>© 2023 Ecommerce</p>
+
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <span>English</span>
+                    <img src="images/us-flag.png" class="w-5 h-4" alt="">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="main.js"></script>
+
+</html>

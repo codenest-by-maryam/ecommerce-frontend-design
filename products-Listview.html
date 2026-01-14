@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/crop-logo-image.png" type="image/x-icon">
+    <title>Mobile Accessories | Ecommerce</title>
+</head>
+
+<body>
+    <!-- HEADER BEGINS-->
+    <header>
+        <nav class="border-b border-gray-300 ">
+            <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+                <!-- LOGO BEGINS-->
+                <div>
+                    <a href="home.html"><img src="images/logo-image.png" alt="Brand Logo"
+                            class="h-14 w-auto text-blue-600"></a>
+                </div>
+                <!-- LOGO ENDS-->
+
+                <!-- SEARCH BAR BEGINS-->
+                <div
+                    class="flex items-center border-2 border-[#2b80fd] rounded-md overflow-hidden shadow-[0_0px_4px_#2b80fd] focus-within:shadow-[0_0_4px_#1C4D8D]">
+                    <input type="text" placeholder="Search"
+                        class="w-80 px-3 py-1.5 text-sm leading-none focus:outline-none">
+                    <button class="flex items-center gap-1 px-3 py-1.5 border-l-2 border-[#2b80fd] text-md"> All
+                        Category
+                        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                    </button>
+
+                    <button type="button"
+                        class="bg-[#2b80fd] px-7 py-1.5 overflow-hidden text-md text-white">Search</button>
+                </div>
+                <!-- SEARCH BARS ENDS-->
+                <!-- HEADER ICONS BEGINS-->
+                <div class="flex items-center gap-6">
+                    <!-- PROFILE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 transition duration-200 ease-in-out">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-user absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-user absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">
+                            Profile
+                        </span>
+
+                    </a>
+                    <!-- MESSAGE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-message absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-regular fa-message absolute opacity-0 transition-opacity duration-200
+                group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">Message</span>
+                    </a>
+                    <!-- ORDER ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-heart absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-heart absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd] "></i>
+                        </span>
+                        <span class="text-xs">Orders</span>
+                    </a>
+                    <!-- CART ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-cart-shopping absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-solid fa-cart-plus absolute opacity-0 transition-opacity duration-200
+            group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs">My cart</span>
+                    </a>
+                </div>
+                <!-- HEADER ICONS ENDS-->
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS-->
+    <!-- CATEGORY NAVIGATION BEGINS-->
+    <section class="border-b text-sm py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
+            <!-- LEFT -->
+            <div class="flex gap-4 text-gray-600">
+                <button class="flex items-center gap-2">
+                    <i class="fa-solid fa-bars text-[18px]"></i>
+                    <a href="home.html">All category</a>
+                </button>
+                <a href="products-Listview.html">Hot offers</a>
+                <a href="products-gridview.html">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <button class="flex items-center gap-1">
+                    Help
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex gap-9 text-gray-600">
+                <button class="flex items-center gap-1">English, USD <i
+                        class="fa-solid fa-chevron-down text-xs text-gray-500"></i></button>
+                <button class="flex items-center gap-2">
+                    Ship to
+                    <img src="images/germany-flag.png" class="w-4 h-3 object-cover">
+                    <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORY NAVIGATION ENDS-->
+    <!-- BREADCRUMB NAVIGATION BEGINS-->
+    <nav class="text-sm text-gray-500 pl-24 pt-7 bg-gray-50">
+        <ol class="flex items-center gap-2">
+            <li><a href="home.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="products-gridview.html" class="hover:text-blue-600">Electronics</a></li>
+            <li><a href="products-Listview.html" class="text-gray-700 font-medium">Mobile Accessories</a></li>
+        </ol>
+    </nav>
+    <!-- BREADCRUMB NAVIGATION ENDS-->
+
+    <!-- [PRODUCTS FILTER--left_sidebar--] + [PRODUCTS CARDS--right_sidebar--] BEGINS  -->
+    <section class="bg-gray-50 px-24 pt-10 pb-12">
+        <div class="flex gap-6">
+            <!-- PRODUCTS FILTER BEGINS --left_sidebar-- -->
+            <aside class="w-[240px]">
+                <!-- Category Section Begins -->
+                <div class="accordion-item border-b py-6 pr-2 w-[210px]">
+                    <!-- HEADER (always visible) -->
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-[20px] font-bold">Category</h2>
+                        <button onclick="toggleAccordion(this)" class="font-semibold">
+                            <svg id="priceArrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- CONTENT (this will toggle) -->
+                    <div
+                        class="accordion-content mt-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Mobile accessory</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Electronics</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Smartphones</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Modern tech</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Category Section Ends -->
+                <!-- Brands Section Begins-->
+                <div class="accordion-item border-b py-6 pr-2 w-[210px]">
+                    <!-- HEADER (always visible) -->
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-[20px] font-bold">Brands</h2>
+                        <button onclick="toggleAccordion(this)" class="font-semibold">
+                            <svg id="priceArrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- CONTENT (this will toggle) -->
+                    <div
+                        class="accordion-content mt-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Samsung</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Apple</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Huwei</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Pocco</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Lenovo</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Brands Section Ends -->
+                <!-- Features Section Begins -->
+                <div class="accordion-item border-b py-6 pr-2 w-[210px]">
+                    <!-- HEADER (always visible) -->
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-[20px] font-bold">Features</h2>
+                        <button onclick="toggleAccordion(this)" class="font-semibold">
+                            <svg id="priceArrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- CONTENT (this will toggle) -->
+                    <div
+                        class="accordion-content mt-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Metallic</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Plastic Covers</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>8GB ram</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Super Power</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="checkbox" class="accent-blue-600 scale-110">
+                                    <span>Large Memory</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Features Section Ends -->
+
+                <!-- Price Range Section Begins -->
+                <div class="accordion-item border-b py-6 pr-2 w-[210px]">
+                    <!-- HEADER (always visible) -->
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-[20px] font-bold">Price range</h2>
+                        <button onclick="toggleAccordion(this)" class="font-semibold">
+                            <svg id="priceArrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- CONTENT (this will toggle) -->
+                    <div
+                        class="accordion-content mt-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <div class="flex gap-2">
+                            <input type="range" min="40" max="1000" class="w-full">
+                        </div>
+
+                        <div class="flex gap-2 mt-3">
+                            <input type="number" placeholder="Min" class="w-1/2 border rounded px-2 py-1 text-sm">
+                            <input type="number" placeholder="Max" class="w-1/2 border rounded px-2 py-1 text-sm">
+                        </div>
+
+                        <button class="mt-3 w-full bg-blue-600 text-white text-sm py-1 rounded">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+                <!-- Price Range Section Ends -->
+
+                <!-- Conditions Section Begins -->
+                <div class="accordion-item border-b py-6 pr-2 w-[210px]">
+                    <!-- HEADER (always visible) -->
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-[20px] font-bold">Conditions</h2>
+                        <button onclick="toggleAccordion(this)" class="font-semibold">
+                            <svg id="priceArrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- CONTENT (this will toggle) -->
+                    <div
+                        class="accordion-content mt-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="radio" name="condition" class="accent-blue-600 scale-110">
+                                    <span>Any</span>
+                                </label>
+                            </li>
+                            <li><label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="radio" name="condition" class="accent-blue-600 scale-110">
+                                    <span>Refurbished</span>
+                                </label>
+                            </li>
+                            <li><label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="radio" name="condition" class="accent-blue-600 scale-110">
+                                    <span>Brand New</span>
+                                </label>
+                            </li>
+                            <li><label class="flex items-center gap-1 cursor-pointer pl-1">
+                                    <input type="radio" name="condition" class="accent-blue-600 scale-110">
+                                    <span>Old Items</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Conditions Section Ends -->
+
+                <!-- Ratings Section Begins -->
+
+                <div class="accordion-item border-b py-6 pr-2 w-[210px]">
+                    <!-- HEADER (always visible) -->
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-[20px] font-bold pb-2">Ratings</h2>
+                        <button onclick="toggleAccordion(this)" class="font-semibold">
+                            <svg id="priceArrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- CONTENT (this will toggle) -->
+                    <div
+                        class="accordion-content mt-3 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0 space-y-2">
+                        <!-- ⭐⭐⭐⭐⭐ ICON-->
+                        <label class="flex items-center gap-1 cursor-pointer pl-1 py-0.5"><input type="checkbox"
+                                class="accent-blue-600 scale-110">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                            </div>
+                        </label>
+                        <!-- ⭐⭐⭐⭐☆ ICON-->
+                        <label class="flex items-center gap-1 cursor-pointer pl-1"><input type="checkbox"
+                                class="accent-blue-600 scale-110">
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-regular fa-star text-gray-300"></i>
+                            </div>
+                        </label>
+                        <!-- ⭐⭐⭐☆☆ ICON-->
+                        <label class="flex items-center gap-1 cursor-pointer pl-1"><input type="checkbox"
+                                class="accent-blue-600 scale-110">
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-regular fa-star text-gray-300"></i>
+                                <i class="fa-regular fa-star text-gray-300"></i>
+                            </div>
+                        </label>
+                        <!-- ⭐⭐☆☆☆ ICON-->
+                        <label class="flex items-center gap-1 cursor-pointer pl-1"><input type="checkbox"
+                                class="accent-blue-600 scale-110">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid   fa-star text-yellow-300"></i>
+                                <i class="fa-solid   fa-star text-yellow-300"></i>
+                                <i class="fa-regular fa-star text-gray-300"></i>
+                                <i class="fa-regular fa-star text-gray-300"></i>
+                                <i class="fa-regular fa-star text-gray-300"></i>
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+                <!-- Ratings Section Ends -->
+            </aside>
+            <!-- PRODUCTS FILTER ENDS --left_sidebar-- -->
+            <!-- RIGHT CONTENT -->
+            <main class="flex-1">
+                <!-- TOP FILTER BAR BEGINS-->
+                <div class="flex items-center justify-between border rounded-md px-4 py-3 mb-4 bg-white">
+
+                    <!-- LEFT SIDE -->
+                    <div class="flex items-center gap-6 text-sm text-gray-600">
+                        <h1 class="text-lg font-bold text-gray-800">
+                            Mobile Accessories
+                        </h1>
+
+                        <p class="text-sm text-gray-500">
+                            12,911 items available
+                        </p>
+
+                        <!-- Verified only -->
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="accent-blue-600">
+                            <span>Verified only</span>
+                        </label>
+
+                        <!-- Featured dropdown -->
+                        <select class="border rounded px-2 py-1 text-sm focus:outline-none">
+                            <option>Featured</option>
+                            <option>Newest</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+                    <div class="flex items-center gap-2">
+                        <!-- Grid view -->
+                        <button class="border px-2 py-1 rounded text-gray-600 hover:bg-gray-100">
+                            <i class="fa-solid fa-border-all"></i>
+                        </button>
+
+                        <!-- List view -->
+                        <button class="border px-2 py-1 rounded text-gray-600 hover:bg-gray-100">
+                            <i class="fa-solid fa-list"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- TOP FILTER BAR ENDS-->
+                <!-- FLEXBOX CARDS BEGINS-->
+                <!--*** CARD-1 ***-->
+                <div
+                    class="flex gap-4 border border-gray-300 shadow-sm rounded-md p-4 bg-white mt-4 hover:shadow-md hover:border-blue-300 hover:-translate-y-1 transition duration-300">
+
+                    <!-- IMAGE + OVERLAY -->
+                    <div class="relative group">
+                        <img src="images/Iphone.jpg" class="w-full h-44 object-contain mb-3">
+
+                        <!-- OVERLAY -->
+                        <a href="products-detail.html"
+                            class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- DETAILS -->
+                    <div class="flex-1">
+
+                        <!-- TITLE + LIKE -->
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-gray-800">
+                                Apple iPhone 12 Pro Max – 128GB, Pacific Red
+                            </h3>
+
+                            <button onclick="toggleLike(this)" class="like-btn text-gray-400 hover:text-red-500">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- PRICE -->
+                        <p class="text-lg font-semibold text-blue-600 mt-1">
+                            $1,099.00
+                        </p>
+
+                        <!-- RATING + ORDERS -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                            <div class="flex text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <span>9.2</span>
+                            <span>•</span>
+                            <span>1,200 orders</span>
+                            <span class="text-green-600 font-medium">• Free Shipping</span>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p class="text-sm text-gray-600 mt-2">
+                            High-performance Apple smartphone with A14 Bionic chip, Super Retina XDR display,
+                            triple-camera system and long-lasting battery.
+                        </p>
+
+                        <!-- VIEW DETAILS -->
+                        <a href="#" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                            View details
+                        </a>
+                    </div>
+                </div>
+                <!--*** CARD-2 ***-->
+                <div
+                    class="flex gap-4 border border-gray-300 shadow-sm rounded-md p-4 bg-white mt-4 hover:shadow-md hover:border-blue-300 hover:-translate-y-1 transition duration-300">
+
+                    <!-- IMAGE + OVERLAY -->
+                    <div class="relative group">
+                        <img src="images/Samsung-galaxy.jpg" class="w-full h-44 object-contain mb-3">
+
+                        <!-- OVERLAY -->
+                        <a href="products-detail.html"
+                            class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- DETAILS -->
+                    <div class="flex-1">
+
+                        <!-- TITLE + LIKE -->
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-gray-800">
+                                Samsung Galaxy S21 Ultra – 256GB, Phantom Black
+                            </h3>
+
+                            <button onclick="toggleLike(this)" class="like-btn text-gray-400 hover:text-red-500">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- PRICE -->
+                        <p class="text-lg font-semibold text-blue-600 mt-1">
+                            $999.00
+                        </p>
+
+                        <!-- RATING + ORDERS -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                            <div class="flex text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <span>8.9</span>
+                            <span>•</span>
+                            <span>980 orders</span>
+                            <span class="text-green-600 font-medium">• Free Shipping</span>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p class="text-sm text-gray-600 mt-2">
+                            Premium Samsung smartphone featuring Dynamic AMOLED display, advanced quad-camera setup,
+                            powerful Exynos processor and long battery life.
+                        </p>
+
+                        <!-- VIEW DETAILS -->
+                        <a href="#" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                            View details
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--*** CARD-3 ***-->
+                <div
+                    class="flex gap-4 border border-gray-300 shadow-sm rounded-md p-4 bg-white mt-4 hover:shadow-md hover:border-blue-300 hover:-translate-y-1 transition duration-300">
+
+                    <!-- IMAGE + OVERLAY -->
+                    <div class="relative group">
+                        <img src="images/Apple-watch.jpg" class="w-full h-44 object-contain mb-3">
+
+                        <!-- OVERLAY -->
+                        <a href="products-detail.html"
+                            class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- DETAILS -->
+                    <div class="flex-1">
+
+                        <!-- TITLE + LIKE -->
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-gray-800">
+                                Apple Watch Series 8 – GPS, 45mm Aluminum Case
+                            </h3>
+
+                            <button onclick="toggleLike(this)" class="like-btn text-gray-400 hover:text-red-500">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- PRICE -->
+                        <p class="text-lg font-semibold text-blue-600 mt-1">
+                            $429.00
+                        </p>
+
+                        <!-- RATING + ORDERS -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                            <div class="flex text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <span>8.7</span>
+                            <span>•</span>
+                            <span>1,120 orders</span>
+                            <span class="text-green-600 font-medium">• Free Shipping</span>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p class="text-sm text-gray-600 mt-2">
+                            Advanced smartwatch with health monitoring features, fitness tracking, always-on display and
+                            seamless iPhone integration.
+                        </p>
+
+                        <!-- VIEW DETAILS -->
+                        <a href="#" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                            View details
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--*** CARD-4 ***-->
+                <div
+                    class="flex gap-4 border border-gray-300 shadow-sm rounded-md p-4 bg-white mt-4 hover:shadow-md hover:border-blue-300 hover:-translate-y-1 transition duration-300">
+
+                    <!-- IMAGE + OVERLAY -->
+                    <div class="relative group">
+                        <img src="images/Apple-macbook.jpg" class="w-full h-44 object-contain mb-3">
+
+                        <!-- OVERLAY -->
+                        <a href="products-detail.html"
+                            class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- DETAILS -->
+                    <div class="flex-1">
+
+                        <!-- TITLE + LIKE -->
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-gray-800">
+                                Apple MacBook Air M1 – 8GB RAM, 256GB SSD
+                            </h3>
+
+                            <button onclick="toggleLike(this)" class="like-btn text-gray-400 hover:text-red-500">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- PRICE -->
+                        <p class="text-lg font-semibold text-blue-600 mt-1">
+                            $1,199.00
+                        </p>
+
+                        <!-- RATING + ORDERS -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                            <span>9.6</span>
+                            <span>•</span>
+                            <span>3,300 orders</span>
+                            <span class="text-green-600 font-medium">• Free Shipping</span>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p class="text-sm text-gray-600 mt-2">
+                            Ultra-light laptop powered by Apple M1 chip, offering exceptional performance, long battery
+                            life and stunning Retina display.
+                        </p>
+
+                        <!-- VIEW DETAILS -->
+                        <a href="#" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                            View details
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--*** CARD-5 ***-->
+                <div
+                    class="flex gap-4 border border-gray-300 shadow-sm rounded-md p-4 bg-white mt-4 hover:shadow-md hover:border-blue-300 hover:-translate-y-1 transition duration-300">
+
+                    <!-- IMAGE + OVERLAY -->
+                    <div class="relative group">
+                        <img src="images/ipad-air.jpg" class="w-full h-44 object-contain mb-3">
+
+                        <!-- OVERLAY -->
+                        <a href="products-detail.html"
+                            class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- DETAILS -->
+                    <div class="flex-1">
+
+                        <!-- TITLE + LIKE -->
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-gray-800">
+                                Apple iPad Air (5th Generation) – 10.9-inch, Wi-Fi, 64GB, Space Gray
+                            </h3>
+
+                            <button onclick="toggleLike(this)" class="like-btn text-gray-400 hover:text-red-500">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- PRICE -->
+                        <p class="text-lg font-semibold text-blue-600 mt-1">
+                            $599.00
+                        </p>
+
+                        <!-- RATING + ORDERS -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                            <div class="flex text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <span>8.8</span>
+                            <span>•</span>
+                            <span>860 orders</span>
+                            <span class="text-green-600 font-medium">• Free Shipping</span>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p class="text-sm text-gray-600 mt-2">
+                            Powerful and lightweight tablet featuring Apple M1 chip, Liquid Retina display, all-day
+                            battery life, and support for Apple Pencil, ideal for work, study, and entertainment.
+                        </p>
+
+                        <!-- VIEW DETAILS -->
+                        <a href="#" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                            View details
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--*** CARD-6 ***-->
+                <div class="flex gap-4 border border-gray-300 shadow-sm rounded-md p-4 bg-white mt-4 hover:shadow-md hover:border-blue-300 
+hover:-translate-y-1 transition duration-300">
+
+                    <!-- IMAGE + OVERLAY -->
+                    <div class="relative group">
+                        <img src="images/sony-headphone.jpg" class="w-full h-44 object-contain mb-3">
+
+                        <!-- OVERLAY -->
+                        <a href="products-detail.html"
+                            class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- DETAILS -->
+                    <div class="flex-1">
+
+                        <!-- TITLE + LIKE -->
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-gray-800">
+                                Sony WH-1000XM5 Wireless Noise Cancelling Headphones
+                            </h3>
+
+                            <button onclick="toggleLike(this)" class="like-btn text-gray-400 hover:text-red-500">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- PRICE -->
+                        <p class="text-lg font-semibold text-blue-600 mt-1">
+                            $399.00
+                        </p>
+
+                        <!-- RATING + ORDERS -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                            <span>9.5</span>
+                            <span>•</span>
+                            <span>2,450 orders</span>
+                            <span class="text-green-600 font-medium">• Free Shipping</span>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p class="text-sm text-gray-600 mt-2">
+                            Industry-leading noise cancellation headphones with crystal-clear sound, all-day comfort,
+                            fast charging and premium build quality.
+                        </p>
+
+                        <!-- VIEW DETAILS -->
+                        <a href="#" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                            View details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- FLEXBOX CARDS ENDS-->
+                <!-- PAGINATION BEGINS -->
+                <div class="flex justify-center gap-2 mt-6">
+                    <button class="px-3 py-1 border rounded">&lt;</button>
+                    <button class="px-3 py-1 border rounded bg-blue-600 text-white">1</button>
+                    <button class="px-3 py-1 border rounded">2</button>
+                    <button class="px-3 py-1 border rounded">3</button>
+                    <button class="px-3 py-1 border rounded">&gt;</button>
+                </div>
+                <!-- PAGINATION ENDS -->
+
+            </main>
+
+        </div>
+    </section>
+    <!-- [PRODUCTS FILTER--left_sidebar--] + [PRODUCTS CARDS--right_sidebar--] ENDS  -->
+
+    <!-- NEWSLETTER SECTIONBEGINS-->
+    <section class="bg-gray-100 py-10">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-[23px] font-bold mb-2">
+                Subscribe on our newsletter
+            </h2>
+            <p class="text-sm text-gray-500 mb-4">
+                Get daily news on upcoming offers from many suppliers all over the world
+            </p>
+
+            <div class="flex justify-center gap-2">
+                <input type="email" placeholder="Email"
+                    class="border px-3 py-2 w-64 rounded focus:outline-blue-600 focus:ring-1 focus:ring-blue-600">
+                <button
+                    class="bg-blue-600 text-white px-5 rounded hover:bg-blue-900 hover:border-2 hover:border-blue-400 hover:shadow-[4px_4px_4px_#1C4D8D] transition">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSLETTER SECTION ENDS-->
+    <!-- FOOTER BEGINS-->
+    <footer class="bg-white border-t border-gray-200 ">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-7 gap-8 text-sm text-gray-600">
+
+                <!-- BRAND -->
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <a href="home.html"><img src="images/logo-image.png" alt="Brand" class="h-8"></a>
+                    </div>
+                    <p class="text-gray-500 max-w-xs">
+                        Discover top products, competitive prices, and a seamless online shopping experience.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="flex gap-3 pt-2">
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-gradient-to-tr from-pink-500 via-purple-500 via-orange-400 to-yellow-400 hover:text-white transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-red-600 hover:border-red-600 hover:text-white transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ABOUT -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- PARTNERSHIP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Partnership</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- INFORMATION -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Money Refund</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Shipping</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- FOR USERS -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">For users</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Login</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Settings</a></li>
+                        <li><a href="#" class="hover:text-blue-600">My Orders</a></li>
+                    </ul>
+                </div>
+
+                <!-- GET APP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Get app</h4>
+                    <div class="space-y-2">
+                        <a href="#"><img src="images/app-store.png" alt="App Store" class="h-10"></a>
+                        <a href="#"><img src="images/google-play.png" alt="Google Play" class="h-10 mt-2"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COPYRIGHT BAR -->
+        <div class="border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-sm text-gray-500">
+                <p>© 2023 Ecommerce</p>
+
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <span>English</span>
+                    <img src="images/us-flag.png" class="w-5 h-4" alt="">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="main.js"></script>
+
+</html>

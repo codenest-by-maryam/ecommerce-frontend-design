@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/crop-logo-image.png" type="image/x-icon">
+    <title>Online Marketplace for Quality Products</title>
+</head>
+
+<body>
+    <!-- HEADER BEGINS-->
+    <header>
+        <nav class="border-b border-gray-300 ">
+            <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+                <!-- LOGO BEGINS-->
+                <div>
+                    <a href="home.html"><img src="images/logo-image.png" alt="Brand Logo" class="h-14 w-auto"></a>
+                </div>
+                <!-- LOGO ENDS-->
+
+                <!-- SEARCH BAR BEGINS-->
+                <div
+                    class="flex items-center border-2 border-[#2b80fd] rounded-md overflow-hidden shadow-[0_0px_4px_#2b80fd] focus-within:shadow-[0_0_4px_#1C4D8D]">
+                    <input type="text" placeholder="Search"
+                        class="w-80 px-3 py-1.5 text-sm leading-none focus:outline-none">
+                    <button class="flex items-center gap-1 px-3 py-1.5 border-l-2 border-[#2b80fd] text-md"> All
+                        Category
+                        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                    </button>
+
+                    <button type="button"
+                        class="bg-[#2b80fd] px-7 py-1.5 overflow-hidden text-md text-white">Search</button>
+                </div>
+                <!-- SEARCH BARS ENDS-->
+                <!-- HEADER ICONS BEGINS-->
+                <div class="flex items-center gap-6">
+                    <!-- PROFILE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 transition duration-200 ease-in-out">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-user absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-user absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">
+                            Profile
+                        </span>
+
+                    </a>
+                    <!-- MESSAGE ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-message absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-regular fa-message absolute opacity-0 transition-opacity duration-200
+                group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs transition-colors duration-200 group-hover:text-[#2b80fd]">Message</span>
+                    </a>
+                    <!-- ORDER ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-heart absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i
+                                class="fa-regular fa-heart absolute opacity-0 transition-opacity duration-200 group-hover:opacity-100 text-[#2b80fd] "></i>
+                        </span>
+                        <span class="text-xs">Orders</span>
+                    </a>
+                    <!-- CART ICON-->
+                    <a href="#"
+                        class="group flex flex-col items-center gap-1 text-gray-500 hover:text-[#2b80fd] transition">
+                        <span class="relative w-5 h-5 transition-transform duration-200 group-hover:scale-110">
+                            <i
+                                class="fa-solid fa-cart-shopping absolute transition-opacity duration-200 group-hover:opacity-0 text-md"></i>
+                            <i class="fa-solid fa-cart-plus absolute opacity-0 transition-opacity duration-200
+            group-hover:opacity-100 text-[#2b80fd]"></i>
+                        </span>
+                        <span class="text-xs">My cart</span>
+                    </a>
+                </div>
+                <!-- HEADER ICONS ENDS-->
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS-->
+    <!-- CATEGORY NAVIGATION BEGINS-->
+    <section class="border-b text-sm py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
+            <!-- LEFT -->
+            <div class="flex gap-4 text-gray-600">
+                <button class="flex items-center gap-2">
+                    <i class="fa-solid fa-bars text-[18px]"></i>
+                    <a href="home.html">All category</a>
+                </button>
+                <a href="products-Listview.html">Hot offers</a>
+                <a href="products-gridview.html">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <button class="flex items-center gap-1">
+                    Help
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex gap-9 text-gray-600">
+                <button class="flex items-center gap-1">English, USD <i
+                        class="fa-solid fa-chevron-down text-xs text-gray-500"></i></button>
+                <button class="flex items-center gap-2">
+                    Ship to
+                    <img src="images/germany-flag.png" class="w-4 h-3 object-cover">
+                    <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORY NAVIGATION ENDS-->
+
+    <!-- HERO SECTION BEGINS-->
+    <section class="bg-gray-50 py-10">
+        <div
+            class="max-w-7xl mx-auto grid grid-cols-12 gap-8 bg-white px-3 py-8 rounded-md border-2 border-[rgb(227,227,227,0.826)]">
+            <!-- LEFT : CATEGORIES -->
+            <aside class="col-span-3 bg-white px-3 py-4  ">
+                <ul class="text-md">
+                    <li class="px-4 py-2 bg-[#e5f1ff] rounded-md">Automobiles</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Clothes and wear</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Home interiors</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Computer and tech</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Tools,equipments</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Sports and outdoor</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Animal and pets</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">Machinery tools</li>
+                    <li class="px-4 py-2 hover:border-b hover:border-gray-300 rounded-full">More category</li>
+                </ul>
+            </aside>
+            <!-- CENTER : MAIN BANNER -->
+            <div class="col-span-6 bg-[url('images/home-banner-image.png')] bg-cover bg-center flex items-center">
+                <div class="pl-16 -translate-y-4 transition">
+                    <h1 class="text-3xl font-bold font-sans mb-4"><span class="block text-sm font-medium mb-1">Latest
+                            trending</span>
+                        Electronic items
+                    </h1>
+                    <button class="w-fit bg-white px-4 py-1.5 rounded-md text-sm font-smal transition-all duration-300 ease-out
+         hover:scale-105 hover:border border-black shadow-[0_0_4px_black] ">Learn more</button>
+                </div>
+            </div>
+            <!-- RIGHT : USER + PROMOS -->
+            <aside class="col-span-3 flex flex-col gap-5">
+                <!-- User card -->
+                <div class="w-64 bg-[#e5f1ff] rounded-md px-4 py-4">
+                    <div class="flex items-center gap-5 mb-5">
+                        <img src="images/user-image.png" alt="" class="w-10 h-10 rounded-full bg-[#c2ddfb] px-1 pt-2">
+                        <p class="text-sm">Hi, user <br><span class="font-medium">let’s get stated</span></p>
+                    </div>
+                    <!-- buttons -->
+                    <div class="flex flex-col gap-2">
+                        <button class="w-full bg-blue-600 text-white py-1.5 rounded-md text-md transition-all duration-300 ease-out
+         hover:scale-105">Join now</button>
+                        <button class="w-full bg-white text-blue-600 py-1.5 rounded-md text-md border transition-all duration-300 ease-out
+         hover:scale-105">log in</button>
+                    </div>
+
+                </div>
+                <!-- Promo card 1 -->
+                <div class="w-64 bg-[#f38332] rounded-md px-7 py-3 text-md transition-all duration-300 ease-out
+         hover:scale-105 hover:shadow-[0_0_7px_#CC561E] hover:border-2 border-[#FEB05D]">
+                    <p class="text-white">Get US $10 off <br> with a new <br> supplier</p>
+                </div>
+                <!-- Promo card 2 -->
+                <div class="w-64 bg-[#55bdc3] rounded-md px-7 py-3 text-md transition-all duration-300 ease-out
+         hover:scale-105 hover:shadow-[0_0_7px_#018790] hover:border-2 border-[#498687]">
+                    <p class="text-white">Send quotes with <br>supplier <br> preferences</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- HERO SECTION ENDS-->
+    <!-- Featured Product Categories Section BEGINS-->
+    <section class="px-10 bg-gray-50">
+        <div class="bg-white px-4 border border-[rgb(227,227,227,0.826)] rounded-md shadow-sm hover:shadow-md transition-shadow duration-300
+">
+            <!-- Heading + Cards in one row -->
+            <div class="flex">
+                <div class="flex flex-col justify-center items-start px-8 py-7 w-2/5">
+                    <h2 class="font-bold text-3xl mb-1">Deals and Offers</h2>
+                    <p class="text-md text-gray-500">Hygiene equipments</p>
+                    <!-- COUNTER BEGINS -->
+                    <div class="flex gap-3 mt-9">
+                        <div class="bg-gray-300 px-3 py-2 rounded-md text-center">
+                            <span id="days" class="font-bold text-lg">04</span>
+                            <p class="text-xs text-gray-500">Days</p>
+                        </div>
+                        <div class="bg-gray-300 px-3 py-2 rounded-md text-center">
+                            <span id="hours" class="font-bold text-lg">13</span>
+                            <p class="text-xs text-gray-500">Hours</p>
+                        </div>
+                        <div class="bg-gray-300 px-3 py-2 rounded-md text-center">
+                            <span id="minutes" class="font-bold text-lg">34</span>
+                            <p class="text-xs text-gray-500">Min</p>
+                        </div>
+                        <div class="bg-gray-300 px-3 py-2 rounded-md text-center">
+                            <span id="seconds" class="font-bold text-lg ">30</span>
+                            <p class="text-xs text-gray-500">Sec</p>
+                        </div>
+                    </div>
+                    <!-- COUNTER ENDS -->
+                </div>
+                <!-- Cards container -->
+                <!-- Card 1 -->
+                <div class="flex flex-col items-center border-l border-gray-200 px-4 py-10 w-1/5">
+                    <div class="h-24 flex items-center justify-center mb-3">
+                        <img src="images/smart-watch.png" alt=""
+                            class="max-h-full object-contain transition-all ease-out hover:scale-105 hover:shadow-[0_0_4px_#2b80fd] hover:rounded-md">
+                    </div>
+                    <h3 class="text-md mb-2">Smart Watches</h3>
+                    <span
+                        class="bg-[rgba(255,227,227,1)] px-2.5 py-1 rounded-md text-sm text-red-500 w-fit hover:scale-110 cursor-pointer">-25%</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex flex-col items-center border-l border-gray-200 px-4 py-10 w-1/5">
+                    <div class="h-24 flex items-center justify-center mb-3">
+                        <img src="images/laptops.png" alt=""
+                            class="max-h-full object-contain transition-all ease-out hover:scale-105 hover:shadow-[0_0_4px_#2b80fd] hover:rounded-md p-1">
+                    </div>
+                    <h3 class="text-md mb-2">Laptops</h3>
+                    <span
+                        class="bg-[rgba(255,227,227,1)] px-2.5 py-1 rounded-md text-sm text-red-500 w-fit hover:scale-110 cursor-pointer">-15%</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex flex-col items-center border-l border-gray-200 px-4 py-10 w-1/5">
+                    <div class="h-24 flex items-center justify-center mb-3">
+                        <img src="images/Gopro-Camera.png" alt=""
+                            class="max-h-full object-contain transition-all ease-out hover:scale-105 hover:shadow-[0_0_4px_#2b80fd] hover:rounded-md p-1">
+                    </div>
+                    <h3 class="text-md mb-2">Gopro Cameras</h3>
+                    <span
+                        class="bg-[rgba(255,227,227,1)] px-2.5 py-1 rounded-md text-sm text-red-500 w-fit hover:scale-110 cursor-pointer">-40%</span>
+                </div>
+                <!-- Card 4 -->
+                <div class="flex flex-col items-center border-l border-gray-200 px-4 py-10 w-1/5">
+                    <div class="h-24 flex items-center justify-center mb-3">
+                        <img src="images/headphone.png" alt=""
+                            class="max-h-full object-contain transition-all ease-out hover:scale-105 hover:shadow-[0_0_4px_#2b80fd] hover:rounded-md p-1">
+                    </div>
+                    <h3 class="text-md mb-2">Headphones</h3>
+                    <span
+                        class="bg-[rgba(255,227,227,1)] px-2.5 py-1 rounded-md text-sm text-red-500 w-fit hover:scale-110 cursor-pointer">-25%</span>
+                </div>
+                <!-- Card 5 -->
+                <div class="flex flex-col items-center border-l border-gray-200 px-4 py-10 w-1/5">
+                    <div class="h-24 flex items-center justify-center mb-3">
+                        <img src="images/mobile-phone.png" alt=""
+                            class="max-h-full object-contain transition-all ease-out hover:scale-105 hover:shadow-[0_0_4px_#2b80fd] hover:rounded-md p-1">
+                    </div>
+                    <h3 class="text-md mb-2">Canon Cameras</h3>
+                    <span
+                        class="bg-[rgba(255,227,227,1)] px-2.5 py-1 rounded-md text-sm text-red-500 w-fit hover:scale-110 cursor-pointer">-25%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Product Categories Section ENDS -->
+    <!-- Home And Outdoor Section BEGINS -->
+    <section class="mx-w-7xl mx-auto py-3 bg-gray-50 px-10">
+        <div
+            class="grid grid-cols-12 bg-white border border-[rgb(227,227,227,0.826)] rounded-md shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+            <!-- LEFT IMAGE PANEL -->
+            <div
+                class="col-span-3 bg-[url('images/home-and-outdoors.png')] bg-cover bg-center p-6 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-[30px] font-bold mb-4">Home And <br> Outdoor</h2>
+                    <button
+                        class="bg-white px-4 py-2 rounded-md text-sm shadow hover:shadow-md transition  hover:scale-105 hover:border-2 border-gray-200">
+                        Source now
+                    </button>
+                </div>
+            </div>
+            <!-- RIGHT PRODUCTS GRID -->
+            <div class="col-span-9 grid grid-cols-4 border-l border-gray-200">
+                <!-- Product Card 1 -->
+                <div class="border-b border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Soft Chairs</h3>
+                    <p class="text-xs text-gray-400">From USD 19</p>
+                    <img src="images/chair.png" alt=""
+                        class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="border-b border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Lamp</h3>
+                    <p class="text-xs text-gray-400">From USD 19</p>
+                    <img src="images/lamp.png" class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="border-b border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Kitchen dishes</h3>
+                    <p class="text-xs text-gray-400">From USD 19</p>
+                    <img src="images/dishes.png"
+                        class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="border-b px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Matka</h3>
+                    <p class="text-xs text-gray-400">From USD 19</p>
+                    <img src="images/matka.png" class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- ROW 2 -->
+                <!-- Product Card 5 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Kitchen mixer</h3>
+                    <p class="text-xs text-gray-400">From USD 100</p>
+                    <img src="images/fruit-juicer.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Blenders</h3>
+                    <p class="text-xs text-gray-400">From USD 39</p>
+                    <img src="images/blender.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Home appliance</h3>
+                    <p class="text-xs text-gray-400">From USD 19</p>
+                    <img src="images/home-appliances.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Vase Decor</h3>
+                    <p class="text-xs text-gray-400">From USD 10</p>
+                    <img src="images/vase.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Home And Outdoor Section BEGINS -->
+    <!-- Electronic And Gadgets Section BEGINS -->
+    <section class="mx-w-7xl mx-auto py-3 bg-gray-50 px-10 pb-14">
+        <div
+            class="grid grid-cols-12 bg-white border border-[rgb(227,227,227,0.826)] rounded-md shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+            <!-- LEFT IMAGE PANEL -->
+            <div
+                class="col-span-3 bg-[url('images/consumer-and-gadgets.png')] bg-cover bg-center p-6 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-[30px] font-bold mb-4">Consumer Electronic <br> And Gadgets</h2>
+                    <button
+                        class="bg-white px-4 py-2 rounded-md text-sm shadow hover:shadow-md transition  hover:scale-105 hover:border-2 border-gray-200">
+                        Source now
+                    </button>
+                </div>
+            </div>
+            <!-- RIGHT PRODUCTS GRID -->
+            <div class="col-span-9 grid grid-cols-4 border-l border-gray-200">
+                <!-- Product Card 1 -->
+                <div class="border-b border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Smart Watchess</h3>
+                    <p class="text-xs text-gray-400">From USD 19</p>
+                    <img src="images/smart-watch.png" alt=""
+                        class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="border-b border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Cameras</h3>
+                    <p class="text-xs text-gray-400">From USD 89</p>
+                    <img src="images/Gopro-Camera.png"
+                        class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="border-b border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Headphones</h3>
+                    <p class="text-xs text-gray-400">From USD 10</p>
+                    <img src="images/head-phones.png"
+                        class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="border-b px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Kettle</h3>
+                    <p class="text-xs text-gray-400">From USD 90</p>
+                    <img src="images/kettle.jpg"
+                        class="ml-auto h-20 object-contain -translate-y-3 transition-transform">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- ROW 2 -->
+                <!-- Product Card 5 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Headphones</h3>
+                    <p class="text-xs text-gray-400">From USD 35</p>
+                    <img src="images/headphone.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Laptop</h3>
+                    <p class="text-xs text-gray-400">From USD 340</p>
+                    <img src="images/laptops.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Tablet</h3>
+                    <p class="text-xs text-gray-400">From USD 500</p>
+                    <img src="images/tablet.png" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="border-r border-gray-200 px-4 py-3 relative group overflow-hidden">
+                    <h3 class="text-md font-bold mb-2">Iphone</h3>
+                    <p class="text-xs text-gray-400">From USD 670</p>
+                    <img src="images/Iphone.jpg" class="ml-auto h-20 object-contain">
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm opacity-0 group-hover:opacity-100 transition">View
+                        Deals</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Electronic And Gadgets Section ENDS -->
+    <!-- An easy way to send requests to all suppliers Section Begins -->
+    <section class="bg-gray-50 py-14">
+        <div class="relative max-w-7xl mx-auto px-4 rounded-lg overflow-hidden 
+           bg-[url('images/home-image.png')] bg-cover bg-center min-h-[400px]">
+
+            <!-- LEFT CONTENT -->
+            <div class="p-14 text-white">
+                <h2 class="text-[27px] font-bold my-2">
+                    An easy way to send requests to all suppliers
+                </h2>
+                <p class="text-sm opacity-90 max-w-md mt-2">
+                    Easily connect with verified suppliers worldwide. Send one request and receive multiple quotes to
+                    compare prices, quality, and delivery options all in one place.
+                </p>
+            </div>
+
+            <!-- OVERLAY FORM -->
+            <div class="absolute right-6 top-1/2 -translate-y-1/2 
+             bg-white p-6 w-full max-w-sm rounded-lg shadow-lg">
+
+                <h3 class="font-semibold mb-3">Send quote to suppliers</h3>
+
+                <input type="text" placeholder="What item you need?"
+                    class="w-full border rounded px-3 py-2 text-sm mb-3">
+
+                <textarea placeholder="Type more details"
+                    class="w-full border rounded px-3 py-2 text-sm mb-3"></textarea>
+
+                <div class="flex gap-2 mb-3">
+                    <input type="number" placeholder="Quantity" class="w-1/2 border rounded px-3 py-2 text-sm">
+
+                    <select class="w-1/2 border rounded px-3 py-2 text-sm">
+                        <option>Pcs</option>
+                        <option>Kg</option>
+                        <option>Box</option>
+                    </select>
+                </div>
+
+                <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+                    Send inquiry
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- An easy way to send requests to all suppliers Section ENDS -->
+
+    <!-- RECOMMENDED ITEMS SECTION BEGINS-->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Recommended items</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+
+                <!-- CARD 1 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/lamp-1.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">£43.00</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Rechargeable Table Lamp</h3>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/gaming-keyboard.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$49.00</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Mechanical Gaming Keyboard</h3>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/led-lights-laptop.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$4.75</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Led Lamp For Laptops </h3>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/t-shirt-1.png" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$7.30</p>
+                    <h3 class="text-sm font-semibold text-gray-500">T-shirts with multiple colors</h3>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/baggy-gean-1.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$4</p>
+                    <h3 class="text-sm font-semibold text-gray-500">R3 Baggy Denim | Blue</h3>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/bag.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$10.00</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Men Backpack</h3>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/geans-2.avif" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$6.70</p>
+                    <h3 class="text-sm font-semibold text-gray-500">DGN Geans</h3>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/decor-piece.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$9.30</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Acrylic Mirror Butterflies</h3>
+                </div>
+
+                <!-- CARD 9 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/waterproof-watch.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$12.00</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Luxury Waterproof Arabic Dial Watch</h3>
+                </div>
+
+                <!-- CARD 10 -->
+                <div class="bg-white border rounded p-3 text-center hover:shadow-md hover:-translate-y-1 transition">
+                    <img src="images/skirt.jpg" class="h-32 mx-auto object-contain">
+                    <p class="text-sm mt-2">$4.20</p>
+                    <h3 class="text-sm font-semibold text-gray-500">Skirt | Black</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RECOMMENDED ITEMS SECTION ENDS -->
+    <!-- OUR EXTRA SERVICES SECTION BEGINS -->
+    <section class="bg-gray-50 pb-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Our extra services</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- CARD 1 -->
+                <div class="bg-white border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition">
+                    <div class="relative">
+                        <img src="images/industry-hub.png" class="bg-black/70 w-full h-36 object-cover">
+
+                        <!-- ICON -->
+                        <div
+                            class="absolute -bottom-5 right-4 w-10 h-10 bg-white border rounded-full flex items-center justify-center shadow">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+
+                    <div class="px-4 py-7">
+                        <h3 class="text-md font-bold text-gray-700 leading-snug">Source from Industry Hubs</h3>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-white border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition">
+                    <div class="relative">
+                        <img src="images/product-customize.png" class="bg-black/80 w-full h-36 object-cover">
+
+                        <div
+                            class="absolute -bottom-5 right-4 w-10 h-10 bg-white border rounded-full flex items-center justify-center shadow">
+                            <img src="images/customize-product-icon.png" class="w-5 h-5">
+                        </div>
+                    </div>
+
+                    <div class="px-4 py-7">
+                        <h3 class="text-md font-bold text-gray-700 leading-snug">Customize Your Products</h3>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-white border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition">
+                    <div class="relative">
+                        <img src="images/shipping-by-air.png" class="bg-black/70 w-full h-36 object-cover">
+
+                        <div
+                            class="absolute -bottom-5 right-4 w-10 h-10 bg-white border rounded-full flex items-center justify-center shadow">
+                            <img src="images/send-message-icon.png" class="w-5 h-5">
+                        </div>
+                    </div>
+
+                    <div class="px-4 py-7">
+                        <h3 class="text-md font-bold text-gray-700 leading-snug">Fast, reliable shipping by air or sea
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="bg-white border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition">
+                    <div class="relative">
+                        <img src="images/product-monitoring.png" class="bg-black/70 w-full h-36 object-cover">
+
+                        <div
+                            class="absolute -bottom-5 right-4 w-10 h-10 bg-white border rounded-full flex items-center justify-center shadow">
+                            <img src="images/shield-icon.png" class="w-5 h-5">
+                        </div>
+                    </div>
+
+                    <div class="px-4 py-7">
+                        <h3 class="text-md font-bold text-gray-700 leading-snug">Products monitoring & inspection</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- OUR EXTRA SERVICES SECTION ENDS -->
+
+    <!-- SUPPLIERS BY REGION BEGINS-->
+    <section class="bg-gray-50 pb-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Suppliers by region</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm pt-4">
+
+                <div class="flex items-center gap-2">
+                    <img src="images/uae-flag.png" class="w-7">
+                    <span class="font-bold text-gray-500">Arabic Emirates</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="images/us-flag.png" class="w-7">
+                    <span class="font-bold text-gray-500">United States</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="images/china-flag.jpg" class="w-7">
+                    <span class="font-bold text-gray-500">China</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="images/uk-flag.png" class="w-7">
+                    <span class="font-bold text-gray-500">Great Britain</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="images/italy-flag.png" class="w-7">
+                    <span class="font-bold text-gray-500">Italy</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SUPPLIERS BY REGION SECTION ENDS -->
+
+    <!-- NEWSLETTER SECTION BEGINS-->
+    <section class="bg-gray-100 py-10">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-[23px] font-bold mb-2">
+                Subscribe on our newsletter
+            </h2>
+            <p class="text-sm text-gray-500 mb-4">
+                Get daily news on upcoming offers from many suppliers all over the world
+            </p>
+
+            <div class="flex justify-center gap-2">
+                <input type="email" placeholder="Email"
+                    class="border px-3 py-2 w-64 rounded focus:outline-blue-600 focus:ring-1 focus:ring-blue-600">
+                <button
+                    class="bg-blue-600 text-white px-5 rounded hover:bg-blue-900 hover:border-2 border-blue-400 hover:shadow-[4px_4px_4px_#1C4D8D] transition">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSLETTER SECTION ENDS-->
+
+    <!-- FOOTER BEGINS-->
+    <footer class="bg-white border-t border-gray-200 ">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-7 gap-8 text-sm text-gray-600">
+
+                <!-- BRAND -->
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <a href="home.html"><img src="images/logo-image.png" alt="Brand" class="h-8"></a>
+                    </div>
+                    <p class="text-gray-500 max-w-xs">
+                        Discover top products, competitive prices, and a seamless online shopping experience.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="flex gap-3 pt-2">
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-gradient-to-tr from-pink-500 via-purple-500 via-orange-400 to-yellow-400 hover:text-white transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full border-2 hover:bg-red-600 hover:border-red-600 hover:text-white transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ABOUT -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- PARTNERSHIP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Partnership</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Find store</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Categories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- INFORMATION -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Money Refund</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Shipping</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- FOR USERS -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">For users</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600">Login</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Settings</a></li>
+                        <li><a href="#" class="hover:text-blue-600">My Orders</a></li>
+                    </ul>
+                </div>
+
+                <!-- GET APP -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">Get app</h4>
+                    <div class="space-y-2">
+                        <a href="#"><img src="images/app-store.png" alt="App Store" class="h-10"></a>
+                        <a href="#"><img src="images/google-play.png" alt="Google Play" class="h-10 mt-2"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COPYRIGHT BAR -->
+        <div class="border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-sm text-gray-500">
+                <p>© 2023 Ecommerce</p>
+
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <span>English</span>
+                    <img src="images/us-flag.png" class="w-5 h-4" alt="">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="main.js"></script>
+
+
+</html>
